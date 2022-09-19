@@ -1,0 +1,104 @@
+.font-face-ch {
+    font-family: "cheltenham_bt";
+}
+.font-face-old {
+    font-family: "OPTIEngraversOldEnglish";
+}
+
+body{
+	/* general setting */
+	--main:#1C1C1C; /* #D05A6E change the html head  IMYOH, 所谓今样，就是“当世风”的意思，形式为七五言四句，在平安中末期流行，而平安被誉为日本文学的顶峰*/ 
+	--secondary:#D05A6E;
+	--darker: #000;
+	--bg: #fff;
+	--bg2: #efefef;
+    margin: var(--mask-width) var(--mask-width) 0;
+    line-height: 1;
+    color: var(--text);
+    background: var(--bg);
+
+	/* motion */
+	--curve: cubic-bezier(.08,.82,.2,1);
+    --curve-out: cubic-bezier(.95,.05,.8,.04);
+    --duration: .3s;
+    --duration-out: .17s;
+    --transition: all var(--duration) var(--curve);
+    --transition-out: all var(--duration-out) var(--curve-out);
+    scroll-behavior: smooth;
+
+	/* border setting */
+	--border: #ddd;
+	--border2: #888;
+	--border-type: dotted;
+	--border-width: 1px;
+	--standard-border: var(--border-width) var(--border-type) var(--border);
+	/* --happy-border: var(--border-width) var(solid) var(--main); need to figure out hoover on axis */
+	--radius: 0px;
+
+	/* header */
+	--side-width: 250px;
+    --actual-width: calc(100vw - 250px);
+
+	/* margin-setting */
+	--h-margin: 1.25rem;
+
+	/* mask setting */
+	--mask-width: 0.5rem;
+
+	/* font setting */
+    --default-font: Helvetica,sans-serif;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica",sans-serif;
+    text-align: left;
+	--bold-weight: 700;
+	--semibold-weight:600;
+
+	--text: #1C1C1C; /*墨水的颜色*/
+	--text2: #434343;
+	--text3: #989898;
+	--text4: #d5d5d5;
+	--fz1: 1.87em;
+	--fz2: 1.47em;
+	--fz3: 0.97em;
+
+    --pattern-bg: radial-gradient(var(--border) calc( .5 * var(--border-width)), var(--bg) calc( .5 * var(--border-width)));
+    --pattern-size: calc( 2 * var(--border-width)) calc( 2 * var(--border-width));
+
+}
+
+/* mask */ 
+.mt {
+    top: 0;
+    height: var(--mask-width);
+}
+
+.mb, .mt {
+    width: 100%;
+    left: 0;
+}
+.mb {
+    bottom: 0;
+    height: var(--mask-width);
+}
+
+.ml, .mr{
+    width: var(--mask-width);
+    height: 100%;
+}
+
+.ml{
+    left:0;
+}
+.mr{
+    right:0;
+}
+
+.mask {
+    position: fixed;
+    z-index: 999;
+    border: calc(var(--mask-width)/ 2) solid var(--main);
+    background: var(--main);
+    pointer-events: none;
+}

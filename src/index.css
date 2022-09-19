@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "cheltenham_bt";
+  src: local("cheltenham_bt"),
+   url("./font/cheltenham_bt.ttf") format("truetype");
+
+  font-family: "OPTIEngraversOldEnglish";
+  src: local("OPTIEngraversOldEnglish"),
+   url("./font/OPTIEngraversOldEnglish.otf") format("truetype");
+  }
+
