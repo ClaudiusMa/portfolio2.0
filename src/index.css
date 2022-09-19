@@ -13,9 +13,9 @@ code {
 }
 
 @font-face {
-  font-family: "cheltenham_bt";
-  src: local("cheltenham_bt"),
-   url("./font/cheltenham_bt.ttf") format("truetype");
+  font-family: "LoveFromSJA-Bold";
+  src: local("LoveFromSJA-Bold"),
+   url("./font/LoveFromSJA-Bold.ttf") format("truetype");
 
   font-family: "OPTIEngraversOldEnglish";
   src: local("OPTIEngraversOldEnglish"),
